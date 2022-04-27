@@ -1,0 +1,4 @@
+FROM debian
+RUN apt-get update && apt-get install moreutils curl -y && apt-get clean
+COPY healthcheck-example.sh /healthcheck-example.sh
+CMD ["/healthcheck-example.sh"]
