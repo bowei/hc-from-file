@@ -1,0 +1,9 @@
+README
+======
+
+Example of serving a healthcheck status from a file.
+
+main.go serves the contents of `-resultFile` as the HTTP
+status/response. This allows for a separate script
+(`healthcheck-example.sh`) to healthcheck containers using custom code
+and write the results to `-resultFile`.
